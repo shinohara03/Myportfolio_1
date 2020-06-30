@@ -1,0 +1,562 @@
+
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;} */
+
+    /* ========================================
+        全体設計
+    ========================================= */
+
+    /*共通  *//*共通  */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333333;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+.box-shadow {
+        box-shadow: 0 2px 7px rgba(83,78,61,0.3);
+    }
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #555555;
+    font-weight: bold;
+    line-height:1;
+    font-family: 'Cherry Swash', cursive,'メイリオ';
+    padding:10px;
+    margin-left:5px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight:bold;
+    text-align: center;
+    background-color:#f5f5f5f5;
+    height:50px;
+    padding-top: 20px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+/*header_title_nav*/
+
+.header_inner,
+.footer_content{
+    background:url(images/background_img1.png);
+    height:80px;
+}
+.header_content {
+    width:100%;
+    height:auto;
+
+}
+
+nav{
+    float:right;
+}
+
+nav.navigation ul li {
+    float:left;
+    width:60px;
+}
+
+nav.navigation  li {
+    list-style:none;
+    padding:0;
+    margin-right:10px;
+    /* background:rgb(250, 9, 9); */
+    text-align: center;
+    font-family: 'Cherry Swash', cursive;
+    color: #555555;
+    font-size:16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height:1;
+}
+
+nav.navigation ul li:hover{
+    background: #fff;
+    opacity: 0.9;
+    border-bottom:5px solid olive;
+}
+
+
+/* top img */
+#header_pic img{
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+
+}
+#header_pic {
+    position: relative;
+}
+
+span#headerpic_text {
+    font-size:25px;
+    color:#fff;
+    line-height:1;
+    font-family: 'Cherry Swash', cursive;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+
+
+
+
+/* NEWS_content  */
+.NEWS_content {
+    /* background:rgb(250, 9, 9); */
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.NEWS_content ul{
+    overflow: scroll;
+    width: 100%;
+    height:200px;
+    margin: 0 auto;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.NEWS_content ul li span{
+    font-size: 12px;
+    font-weight: normal;
+    color:#b5b3b3;
+    margin-right: 15px;
+}
+
+.NEWS_content li {
+    font-size: 13px;
+    font-weight:normal;
+    color:#927e7a;
+    border-bottom: 1px dotted #d0d0d0;
+    line-height: 32px;
+    padding: 0 20px;
+}
+
+
+
+
+
+/* ABOUT_content */
+.ABOUT_content {
+    /* background:rgb(251, 255, 0); */
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+.ABOUT_content img {
+    width:100%;
+    height:auto;
+    margin-top:10px;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+}
+
+
+/* 装飾２重枠線 */
+.border {
+    display: inline-block;
+    border: solid 3px #333333;
+    position: relative;
+    padding:30px;
+    margin: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.border:after {
+    content: "";
+    border: solid 3px #444444;
+    position: absolute;
+    top:5px;
+    left:5px;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*SKILL_content  */
+.SKILL_content {
+    /* background:rgb(255, 102, 0); */
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+
+h3 {
+    color: #ffffff;
+    font-weight: bold;
+    text-align:center;
+    border-radius: 10px;
+    background:rgb(30, 48, 31);
+    padding:10px;
+    width:100px;
+    margin: 0 auto;
+}
+
+.programming_text,
+.designtool_text {
+    margin-top:10px;
+    padding:10px;
+}
+
+.programming,
+.designtool  {
+    box-sizing: border-box;
+    background:rgb(167, 253, 170);
+    border-radius: 10px;
+    padding:20px 0;
+    height:200px;
+    margin: 10px;
+}
+
+
+
+.designtool  {
+    position: relative;
+overflow: hidden;
+}
+
+
+.list {
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+
+#photoshop,
+#illustrator{
+    margin-right:10px;
+    position: relative;
+    left: -50%;
+    float: left;
+}
+
+
+
+
+
+
+/* WORK_content  */
+.WORK_content {
+    /* background:rgb(106, 255, 0); */
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    margin-bottom:10px;
+
+}
+
+.box1_banner_contatiner,
+.box2_LP_contatiner,
+.box3_HP_contatiner{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+
+}
+
+
+.box1,.box2,.box3 {
+    background: linear-gradient(to right,rgb(186,175,222),rgb(207,159,192),rgb(226,144,162));
+    width:300px;
+    height:200px;
+    text-align: center;
+}
+
+.box1 p, .box2 p, .box3 p{
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+    line-height:200px;
+}
+
+
+.box1_text,.box2_text,.box3_text {
+    flex:1;
+    /* background:rgb(102,216, 119); */
+    text-align: center;
+    padding: 20px;
+    width:100%;
+}
+
+button {
+    text-align: center;
+    margin:10px;
+    padding:10px;
+    width:100px;
+}
+
+
+
+/*  footer_content */
+.footer_content {
+    /* background:rgb(210, 208, 214); */
+    width:100%;
+    height:80px;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+
+.footer_content  p{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+
+@media screen and  (min-width: 767px) {
+/* PC用CSS 767ｐｘ以上の場合適用 */
+
+.header_inner,
+.footer_content {
+    background: url(images/background_img1.png);
+    /* background: url(images/background_img2.png); */
+    height:100px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    margin-left:20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+    background-color:#f5f5f5f5;
+    height:60px;
+    padding-top: 20px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+
+
+nav.navigation ul li {
+    float:left;
+    width:100px;
+    margin-right:15px;
+    /* background:rgb(250, 9, 9); */
+    font-size:20px;
+
+}
+
+.header_pic img {
+    width:980px;
+
+}
+
+/* top_img */
+span#headerpic_text {
+    font-size:50px;
+    color:#fff;
+    font-family: 'Cherry Swash', cursive;
+    position:absolute;
+    bottom:30px;
+    right:30px;
+}
+
+
+
+
+/* ABOUT */
+
+.ABOUT_content {
+    /* background:rgb(251, 255, 0); */
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+
+.ABOUT_flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ABOUT_flex img {
+    width:700px;
+    margin-top:10px;
+
+}
+
+
+
+/* 装飾２重枠線 */
+.border {
+    flex:1;
+    font-size: 18px;
+    display: inline-block;
+    border: solid 3px #333333;
+    position: relative;
+    padding:30px;
+    margin: 10px;
+    margin-top:10px;
+}
+
+.border:after {
+    content: "";
+    border: solid 3px #444444;
+    position: absolute;
+    top:5px;
+    left:5px;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* SKILL */
+.SKILL_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+
+.programming_text,
+.designtool_text {
+    padding:10px 20px 0;
+    font-size:18px;
+}
+
+.programming,.designtool {
+    width:500px;
+    height:270px;
+}
+
+
+/* WORK */
+
+.WORK_content {
+    /* background:rgb(106, 255, 0); */
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    margin-bottom:10px;
+
+}
+
+
+
+
+.box1,.box2,.box3 {
+    background: linear-gradient(to right,rgb(186,175,222),rgb(207,159,192),rgb(226,144,162));
+    width:420px;
+    height:300px;
+    float:left;
+    margin-left: 200px;
+}
+
+.box1 p, .box2 p, .box3 p{
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+    margin-top:50px;
+
+}
+
+
+.box1_text,.box2_text,.box3_text {
+    flex:1;
+    /* background:rgb(102,216, 119); */
+    font-size:18px;
+    text-align: center;
+    padding: 20px;
+    width:420px;
+    float:left;
+}
+
+button {
+    text-align: center;
+    margin:10px;
+    padding:10px;
+    width:200px;
+}
+
+/*  footer_content */
+.footer_content {
+    /* background:rgb(210, 208, 214); */
+    width:100%;
+    height:100px;
+    margin: 0 auto;
+}
+
+.footer_content  p{
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+}
