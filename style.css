@@ -5,7 +5,6 @@
     全体設計
 ========================================= */
 
-  /*共通  */
 *{
     margin: 0;
     padding: 0;
@@ -53,8 +52,10 @@ a{
     text-decoration: none;
 }
 
+/* ========================================
+    ヘッダー　ナビ
+========================================= */
 
-/*header_title_nav*/
 
 .header_inner,
 .footer_content{
@@ -97,8 +98,9 @@ nav.navigation ul li:hover{
     border-bottom:5px solid olive;
 }
 
-
-/* top img */
+/* ========================================
+    トップ画像
+========================================= */
 #header_pic img{
     width:100%;
     height:auto;
@@ -121,9 +123,9 @@ span#headerpic_text {
 }
 
 
-
-
-/* NEWS_content  */
+/* ========================================
+    NEWコンテンツ
+========================================= */
 .NEWS_content {
     /* background:rgb(250, 9, 9); */
     width:100%;
@@ -159,9 +161,9 @@ span#headerpic_text {
 
 
 
-
-
-/* ABOUT_content */
+/* ========================================
+    ABOUTコンテンツ
+========================================= */
 .ABOUT_content {
     /* background:rgb(251, 255, 0); */
     width:100%;
@@ -199,9 +201,9 @@ span#headerpic_text {
     height: 100%;
 
 }
-
-
-/*SKILL_content  */
+/* ========================================
+    SKILLコンテンツ
+========================================= */
 .SKILL_content {
     /* background:rgb(255, 102, 0); */
     width:100%;
@@ -263,9 +265,9 @@ overflow: hidden;
 
 
 
-
-
-/* WORK_content  */
+/* ========================================
+    WORKコンテンツ
+========================================= */
 .WORK_content {
     /* background:rgb(106, 255, 0); */
     width:100%;
@@ -318,8 +320,9 @@ button {
 }
 
 
-
-/*  footer_content */
+/* ========================================
+    footerコンテンツ
+========================================= */
 .footer_content {
     /* background:rgb(210, 208, 214); */
     width:100%;
@@ -335,8 +338,20 @@ button {
 }
 
 
-@media screen and  (min-width: 767px) {
-/* PC用CSS 767ｐｘ以上の場合適用 */
+/* ========================================
+    制作実績ページ
+========================================= */
+
+h2#work {
+    margin-bottom:10px;
+}
+
+
+
+
+
+
+@media screen and  (min-width: 767px) {/* PC用CSS 767ｐｘ以上の場合適用 */
 
 .header_inner,
 .footer_content {
@@ -409,8 +424,9 @@ span#headerpic_text {
 
 
 
-
-/* ABOUT */
+/* ========================================
+    ABOUTコンテンツ
+========================================= */
 
 .ABOUT_content {
     /* background:rgb(251, 255, 0); */
@@ -457,8 +473,10 @@ span#headerpic_text {
     height: 100%;
 
 }
+/* ========================================
+    SKILLコンテンツ
+========================================= */
 
-/* SKILL */
 .SKILL_flex {
     display: flex;
     justify-content: center;
@@ -477,9 +495,9 @@ span#headerpic_text {
     height:270px;
 }
 
-
-/* WORK */
-
+/* ========================================
+    WORKコンテンツ
+========================================= */
 .WORK_content {
     /* background:rgb(106, 255, 0); */
     width:100%;
@@ -525,8 +543,9 @@ button {
     padding:10px;
     width:200px;
 }
-
-/*  footer_content */
+/* ========================================
+    footerコンテンツ
+========================================= */
 .footer_content {
     /* background:rgb(210, 208, 214); */
     width:100%;
@@ -540,5 +559,20 @@ button {
     font-weight: bold;
     padding-top: 40px;
 }
+
+
+/* ========================================
+    制作実績ページ
+========================================= */
+
+h2#work {
+    margin-bottom:36px;
+}
+
+
+
+
+
+
 
 }
