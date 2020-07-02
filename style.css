@@ -362,6 +362,9 @@ h2#work {
     height:auto;
 }
 
+.web_banner {
+    display:flex;
+}
 
 
 @media screen and  (min-width: 767px) {/* PC用CSS 767ｐｘ以上の場合適用 */
