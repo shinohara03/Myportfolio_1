@@ -61,6 +61,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    
 }
 /* ナビ固定スクロール */
 
@@ -362,8 +363,16 @@ h2#work {
     height:auto;
 }
 
-.web_banner {
+.web_banner ul {
+    list-style:none;
+    margin:0;
+    padding:0;
     display:flex;
+    flex:row
+}
+
+.web_banner ul li img{
+    width:100%;
 }
 
 
