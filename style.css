@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 /* ========================================
@@ -53,9 +52,17 @@ a{
 }
 
 /* ========================================
-    ヘッダー　ナビ
+    ヘッダーナビ
 ========================================= */
 
+/* ナビ固定スクロール */
+header {
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+/* ナビ固定スクロール */
 
 .header_inner,
 .footer_content{
@@ -243,7 +250,7 @@ h3 {
 
 .designtool  {
     position: relative;
-overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -341,13 +348,19 @@ button {
 /* ========================================
     制作実績ページ
 ========================================= */
+.wrapper{
+    width:100%;
+    height:auto;
+}
 
 h2#work {
     margin-bottom:10px;
 }
 
-
-
+.portfolio_content {
+    width:100%;
+    height:auto;
+}
 
 
 
