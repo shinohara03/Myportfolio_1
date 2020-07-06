@@ -349,34 +349,76 @@ button {
 /* ========================================
     制作実績ページ
 ========================================= */
-.wrapper{
+/* .wrapper{
     width:100%;
     height:auto;
-}
+} */
 
-h2#work {
-    margin-bottom:10px;
+.WORK_content {
+    margin-top:100px;
 }
 
 .portfolio_content {
+    /* background:yellow; */
+    margin-top:20px;
+    margin-bottom:20px;
     width:100%;
     height:auto;
 }
 
+
+/* 画像装飾 */
 .web_banner ul {
+    margin:10px;
     list-style:none;
-    margin:0;
-    padding:0;
+    flex:row;
     display:flex;
-    flex:row
+    justify-content:center;
+}
+
+.web_banner li {
+    padding:5px;
 }
 
 .web_banner ul li img{
     width:100%;
 }
 
+/*テキスト装飾 */
+.web_bannertext {
+    border: 1px solid #f5f5f5f5;
+    /* background:yellow; */
+    margin:10px;
+    border-bottom: 1px dotted #333 ;
+}
+
+
+
+.web_bannertext dl{
+    padding:10px;
+}
+
+.web_bannertext dt{
+    padding-left:10px;
+    border-left: 5px solid #2e6977;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and  (min-width: 767px) {/* PC用CSS 767ｐｘ以上の場合適用 */
+
+
 
 .header_inner,
 .footer_content {
