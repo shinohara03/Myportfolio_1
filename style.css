@@ -61,11 +61,116 @@ a{
 header {
     position:fixed;
     width: 100%;
+    height: 90px;
     top: 0;
     z-index: 1000;
     
 }
-/* ナビ固定スクロール */
+
+
+/* ハンバーガーメニュー */
+#nav_hamburger {
+    position: absolute;
+    top: 0;
+    /* right: -40%; */
+    width: 40%;
+    height: 100vh;
+    background: #f5f5f5f5;
+    transition: .7s;
+}
+
+#nav_hamburger ul{
+    padding-top: 80px;
+}
+
+#nav_hamburger ul li {
+    list-style:none;
+}
+
+#nav_hamburger a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    padding: 10px;
+    transition: .5s;
+    font-size: 25px;
+}
+
+#nav_hamburger li a:hover {
+    color: #fff;
+    background:#7a7a7a;
+    border-bottom: none;
+
+}
+/* 位置と幅・高さ */
+
+#hamburger_line {
+    /* display: block; */
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 50px;
+    height: 44px;
+    cursor: pointer;
+    transition: 1s;
+    /* background-color: #000; */
+    }
+
+/* 線の縦幅・色の指定 */
+    .inner_line {
+        /* display: block; */
+        position: absolute;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        transition: 1s;
+        border-radius: 4px;
+        }
+
+/* 横棒3本線 */
+        #line_1 {
+            top: 0;
+        }
+        #line_2 {
+            top: 20px;
+        }
+        #line_3 {
+            bottom: 0px;
+        }
+
+/* 閉じるボタンの動き */
+        .in{
+        transform: translateX(100%);
+        }
+        .line_1,.line_2,.line_3{
+        background: #000000;
+        }
+        .line_1 {
+        /*-45度回転させる*/
+        transform: rotate(-45deg);
+        top: 0;
+        }
+        .line_2 {
+        opacity: 0;
+        }
+        .line_3 {
+        /*45度回転させる*/
+        transform: rotate(45deg);
+        bottom: 0;
+        }
+
+
+
+
+
+
+
+/* ハンバーガーメニュー */
+
+
+
 
 .header_inner,
 .footer_content{
