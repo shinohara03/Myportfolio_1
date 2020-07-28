@@ -64,11 +64,16 @@ header {
     height: 90px;
     top: 0;
     z-index: 1000;
-    
+}
+
+.navigation {
+    display: none;
 }
 
 
+
 /* ハンバーガーメニュー */
+
 #nav_hamburger {
     position: absolute;
     top: 0;
@@ -77,6 +82,8 @@ header {
     height: 100vh;
     background: #f5f5f5f5;
     transition: .7s;
+    left: auto;
+    right: 0;
 }
 
 #nav_hamburger ul{
@@ -109,11 +116,13 @@ header {
     /* display: block; */
     position: absolute;
     top: 20px;
-    left: 30px;
     width: 50px;
     height: 44px;
     cursor: pointer;
     transition: 1s;
+    left: auto;
+    right: 0;
+    margin-right: 20px;
     /* background-color: #000; */
     }
 
@@ -168,6 +177,8 @@ header {
 
 
 /* ハンバーガーメニュー */
+
+
 
 
 
@@ -557,6 +568,12 @@ h2 {
     margin-bottom: 36px;
 }
 
+#nav_hamburger,#hamburger_line {
+    display:none;
+}
+.navigation {
+    display:block;
+}
 
 nav.navigation li a{
     text-align: center;
