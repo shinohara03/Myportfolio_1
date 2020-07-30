@@ -161,14 +161,19 @@ header {
     height:auto;
 }
 .navigation {
-background-color: slateblue;
+
 float:right;
 }
-
+.navigation li a{
+    font-size: 30px;
+}
 .navigation ul li{
+    background-color: slateblue;
     float:left;
     list-style:none;
-    
+    margin-right: 20px;
+    text-align: center;
+    width: 120px;
 }
 
 /* ========================================
