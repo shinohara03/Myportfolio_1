@@ -292,7 +292,6 @@ h2 {
 .ABOUT_content img {
     width:100%;
     height:auto;
-    box-sizing: border-box;
     border: 5px solid #fff;
 }
 
@@ -302,18 +301,18 @@ h2 {
     display: inline-block;
     border: solid 3px #333333;
     position: relative;
-    padding:30px;
+    padding: 30px;
     margin: 10px;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .border:after {
     content: "";
     border: solid 3px #444444;
     position: absolute;
-    top:5px;
-    left:5px;
+    top: 5px;
+    left: 5px;
     width: 100%;
     height: 100%;
 
@@ -381,8 +380,13 @@ h3 {
 /* ========================================
     WORKコンテンツ
 ========================================= */
-.WORK_content {
-    /* background:rgb(106, 255, 0); */
+
+
+
+
+
+/* .WORK_content {
+    background:rgb(106, 255, 0);
     width:100%;
     height:auto;
     margin:20px 0;
@@ -394,15 +398,15 @@ h3 {
 .box3_HP_contatiner{
     display: flex;
     flex-wrap:wrap;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
     margin:10px;
 }
 
 
 .box1,.box2,.box3 {
     background: linear-gradient(to right,rgb(186,175,222),rgb(207,159,192),rgb(226,144,162));
-    /* width:300px; */
+    width:300px;
     height:200px;
     text-align: center;
     flex: auto;
@@ -432,7 +436,7 @@ button {
     margin:10px;
     padding:10px;
     width:100px;
-}
+} */
 
 
 /* ========================================
@@ -566,36 +570,6 @@ h2 {
 
 
 
-
-
-/* nav.navigation li a{
-    text-align: center;
-    font-family: 'Cherry Swash', cursive;
-    color: #555555;
-    font-weight: bold;
-    font-size:30px;
-    background:rgb(250, 9, 9);
-}
-
-
-
-nav.navigation ul li {
-    width:100px;
-    background:rgb(250, 9, 9);
-}
-
-nav.navigation  li {
-    margin-right:30px;
-    margin-top: -30px;
-}
-
-nav.navigation ul li:hover{
-    background: #fff;
-    opacity: 0.9;
-    border-bottom:5px solid olive;
-} */
-
-
 /* top_img */
 span#headerpic_text {
     font-size:50px;
@@ -614,30 +588,28 @@ span#headerpic_text {
 
 .ABOUT_content {
     /* background:rgb(251, 255, 0); */
-    width:100%;
+    /* width:100%; */
     height:auto;
     margin: 0 auto;
     margin-bottom:10px;
 }
 
 .ABOUT_flex {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin:10px;
 }
 
-
 .ABOUT_flex img {
-    width:700px;
+    width:600px;
     margin-top:10px;
-
 }
 
 
 
 /* 装飾２重枠線 */
 .border {
-    flex:1;
     font-size: 18px;
     display: inline-block;
     border: solid 3px #333333;
@@ -645,6 +617,7 @@ span#headerpic_text {
     padding:30px;
     margin: 10px;
     margin-top:10px;
+    width:650px;
 }
 
 .border:after {
@@ -683,10 +656,15 @@ span#headerpic_text {
 /* ========================================
     WORKコンテンツ
 ========================================= */
-.WORK_content {
-    /* background:rgb(106, 255, 0); */
-    width:100%;
-    height:auto;
+
+
+
+
+
+/* .WORK_content {
+    background:rgb(106, 255, 0);
+    width:100%; 
+     height:auto;
     margin: 0 auto;
     margin-bottom:10px;
 
@@ -697,8 +675,8 @@ span#headerpic_text {
 
 .box1,.box2,.box3 {
     background: linear-gradient(to right,rgb(186,175,222),rgb(207,159,192),rgb(226,144,162));
-    width:420px;
-    height:300px;
+     width:420px;
+    height:300px; 
     float:left;
     margin-left: 200px;
 }
@@ -714,11 +692,11 @@ span#headerpic_text {
 
 .box1_text,.box2_text,.box3_text {
     flex:1;
-    /* background:rgb(102,216, 119); */
+     background:rgb(102,216, 119); 
     font-size:18px;
     text-align: center;
     padding: 20px;
-    width:420px;
+     width:420px; 
     float:left;
 }
 
@@ -727,7 +705,7 @@ button {
     margin:10px;
     padding:10px;
     width:200px;
-}
+} */
 /* ========================================
     footerコンテンツ
 ========================================= */
