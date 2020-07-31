@@ -329,7 +329,7 @@ h3 {
 .programming,
 .designtool  {
     box-sizing: border-box;
-    background:rgb(167, 253, 170);
+    background:#ebebeb;
     border-radius: 10px;
     padding:20px 0;
     height:180px;
