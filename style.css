@@ -124,7 +124,7 @@ header {
     transform: translateX(100%);
     }
     .line_1,.line_2,.line_3{
-        background: #000000;
+        background: #555555;
     }
     .line_1 {
         transform: translateY(20px) rotate(-45deg);
