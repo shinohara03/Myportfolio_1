@@ -437,28 +437,59 @@ h3 {
 
 /* 画像装飾 */
 
-.web_banner ul{
+/* webバナー */
+.web_banner_1 ul{
 display: flex;
 flex-wrap: wrap;
 }
 
-.web_banner li{
+.web_banner_1 li{
 flex: auto;
 width: 40%;
 }
 
-.web_banner ul {
+.web_banner_1 ul{
     margin:10px;
     list-style:none;
 }
 
-.web_banner li {
+.web_banner_1 li {
     padding:5px;
 }
 
-.web_banner img{
-    width:250px;
+.web_banner_1 img{
+    width:100%;
 }
+
+
+
+/* アメブロ用トップバナー */
+.web_banner_2 {
+    text-align: center;
+}
+.web_banner_2 img {
+    width:90%;
+    
+}
+
+
+
+/* LP  */
+
+.web_banner_3 {
+    text-align: center;
+}
+.web_banner_3 img {
+    width:100%;
+}
+
+
+.web_banner_4 {
+    text-align: center;
+}
+
+
+
 
 /*テキスト装飾 */
 .web_bannertext {
@@ -682,49 +713,19 @@ span#headerpic_text {
     制作実績ページ
 ========================================= */
 
+
+.WORK_content{
+    width:980px;
+    margin-top:10px;
+    height: auto;
+}
+
 .portfolio_content {
-    /* background:yellow; */
     margin-top:150px;
-    margin-bottom:50px;
-    width:100%;
-    height:auto;
 }
 
-/* 画像装飾 */
-.web_banner ul li{
-    margin: 5px;
-    list-style:none;
-    flex:row;
-    display:flex;
-    justify-content:center;
-}
-.web_banner  {
-    margin-bottom:20px;
-}
-
-.web_banner li {
-    padding:5px;
-}
-
-.web_banner ul li img{
-    width:70%;
-}
-
-/*テキスト装飾 */
-.web_bannertext {
-    height:auto;
-    /* border: 1px solid #444444; */
-    /* background:yellow; */
-    margin:10px;
-    width:960px;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-section.border-bottom {
-    /* width:960px; */
-    height:auto;
-    margin-bottom:50px;
+.portfolio_content li {
+    list-style: none;
 }
 
 
