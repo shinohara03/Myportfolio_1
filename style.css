@@ -436,20 +436,28 @@ h3 {
 
 
 /* 画像装飾 */
+
+.web_banner ul{
+display: flex;
+flex-wrap: wrap;
+}
+
+.web_banner li{
+flex: auto;
+width: 40%;
+}
+
 .web_banner ul {
     margin:10px;
     list-style:none;
-    flex:row;
-    display:flex;
-    justify-content:center;
 }
 
 .web_banner li {
     padding:5px;
 }
 
-.web_banner ul li img{
-    width:100%;
+.web_banner img{
+    width:250px;
 }
 
 /*テキスト装飾 */
@@ -474,8 +482,6 @@ h3 {
 section.border-bottom {
     margin-bottom:50px;
 }
-
-
 
 
 

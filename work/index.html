@@ -9,10 +9,13 @@
 <body>
 
     <!-- header -->
-    <header class="header_content ">
+    <header class="header_content clearfix">
         <div class="header_inner">
             <h1>portfoliosite</h1>
-            <nav class="navigation ">
+
+            <!-- ハンバーガーメニュー -->
+
+            <nav id="nav_hamburger">
                 <ul>
                     <li><a href="#">TOP</a></li>
                     <li><a href="index.html#news">NEWS</a></li>
@@ -20,7 +23,35 @@
                     <li><a href="index.html#skill">SKILL</a></li>
                     <li><a href="index.html#work">WORK</a></li>
                 </ul>
-            </nav>
+                </nav>
+
+
+            <!-- ハンバーガーメニューのアイコン -->
+            <div id="hamburger_line">
+                <!-- 上の線 -->
+                <span class="inner_line" id="line_1"></span>
+                <!-- 真ん中の線 -->
+                <span class="inner_line" id="line_2"></span>
+                <!--下の線 -->
+                <span class="inner_line" id="line_3"></span>
+                </div>
+
+                    <!-- ハンバーガーメニュー -->
+
+
+                <!-- PC画面ナビ -->
+
+                            <nav class="navigation clearfix">
+                                <ul>
+                                    <li><a href="#">TOP</a></li>
+                                    <li><a href="index.html#news">NEWS</a></li>
+                                    <li><a href="index.html#about">ABOUT</a></li>
+                                    <li><a href="index.html#skill">SKILL</a></li>
+                                    <li><a href="index.html#work">WORK</a></li>
+                                </ul>
+                            </nav>
+                <!-- PC画面ナビ -->
+
         </div>
     </header>
 
@@ -33,18 +64,12 @@
     <h2 id="work">バナー・アイキャッチ制作実績</h2>
         <figure class="web_banner">
             <ul>
-                <li><img  src="../images/aloma_banner.png" art="portfolio"></img></li>
-                <li><img  src="../images/springtravel_banner.png" art="portfolio"></img></li>
-                <li><img  src="../images/childsport_banner.png" art="portfolio"></img></li>
-            </ul>
-
-            <ul>
-                <li><img  src="../images//beautysalon_banner.png" art="portfolio"></img></li>
-                <li><img  src="../images/clinic_banner.png" art="portfolio"></img></li>
-            </ul>
-
-            <ul>
-                <li><img src="../images/Lstep2_bunner.png" art="portfolio"></img></li>
+                <li><img  src="../images/aloma_banner.png" art="portfolio_1"></img></li>
+                <li><img  src="../images/springtravel_banner.png" art="portfolio_2"></img></li>
+                <li><img  src="../images/childsport_banner.png" art="portfolio_3"></img></li>
+                <li><img  src="../images//beautysalon_banner.png" art="portfolio_4"></img></li>
+                <li><img  src="../images/clinic_banner.png" art="portfolio_5"></img></li>
+                <!-- <li><img src="../images/Lstep2_bunner.png" art="portfolio_6"></img></li> -->
             </ul>
         </figure>
 
@@ -62,7 +87,8 @@
             <dl>
                 <dt>デザイン</dt>
                 <dd>デザインスクール時の課題をテーマにバナーを作成しました。
-                    スクール時は文字を目立たせるため、ゴテゴテのデザインを意識しながら制作していましたが、今はシンプルなデザインを心がけて制作しています。
+                    スクール時は文字を目立たせるため、雑多なデザインを意識しながら制作していましたが、
+                    今はシンプルなデザインを心がけて制作しています。
                     </dd>
             </dl>
     </div>
@@ -154,5 +180,6 @@
 </footer>
 
 
+<script src="../js/script.js"></script>
 </body>
 </html>
