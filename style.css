@@ -713,22 +713,19 @@ span#headerpic_text {
     制作実績ページ
 ========================================= */
 
+.WORK_content h2 {
+    margin-top:150px;
+}
 
-.WORK_content{
+.portfolio_content {
     width:980px;
     margin-top:10px;
     height: auto;
 }
 
-.portfolio_content {
-    margin-top:150px;
-}
-
 .portfolio_content li {
     list-style: none;
 }
-
-
 
 
 }
