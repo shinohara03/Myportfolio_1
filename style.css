@@ -289,14 +289,19 @@ a p.btn_prof {
 
 }
 
-
 /* ========================================
     Profile
 ========================================= */
+.Profile_wrap {
+    width: 960px;
+    height: 900px;
+    background: red;
+    margin: 50px auto;
 
+}
+.row2 {
 
-
-
+}
 
 
 
