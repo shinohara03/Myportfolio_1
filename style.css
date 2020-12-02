@@ -37,120 +37,31 @@ header {
     height: auto;
 }
 .navigation {
+    display: block;
+}
+#nav_hamburger,#hamburger_line {
     display: none;
 }
 
-/* ハンバーガーメニュー */
-#nav_hamburger {
-    position: absolute;
-    top: 0;
-    left: -40%;
-    width: 40%;
-    height: 100vh;
-    background: #f5f5f5f5;
-    transition: .7s;
-}
-
-#nav_hamburger ul{
-    padding-top: 80px;
-}
-
-#nav_hamburger ul li {
-    list-style:none;
-}
-
-#nav_hamburger a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    margin: 0 15px;
-    padding: 10px;
-    transition: .5s;
-    font-size: 25px;
-}
-
-#nav_hamburger li a:hover {
-    color: #fff;
-    background:#7a7a7a;
-    border-bottom: none;
-}
-
-/* 位置と幅・高さ */
-#hamburger_line {
-    display: block;
-    position: absolute;
-    top: 20px;
-    width: 50px;
-    height: 44px;
-    cursor: pointer;
-    transition: 1s;
-    left: auto;
-    right: 0;
-    margin-right: 20px;
-    /* background-color: #000; */
-    }
-
-/* 線の縦幅・色の指定 */
-    .inner_line {
-        display: block;
-        position: absolute;
-        left: 0;
-        width: 50px;
-        height: 5px;
-        background-color: #555555;
-        transition: 1s;
-        border-radius: 4px;
-        }
-
-/* 横棒3本線 */
-        #line_1 {
-            top: 0;
-        }
-        #line_2 {
-            top: 20px;
-        }
-        #line_3 {
-            bottom: 0px;
-        }
-
-/* 閉じるボタンの動き */
-.fadein{
-    transform: translateX(100%);
-    }
-    .line_1,.line_2,.line_3{
-        background: #555555;
-    }
-    .line_1 {
-        transform: translateY(20px) rotate(-45deg);
-        top: 0;
-    }
-    .line_2 {
-        opacity: 0;
-    }
-    .line_3 {
-        transform: translateY(-20px) rotate(45deg);
-        bottom: 0;
-    }
-
-
 /* PCナビ設定 */
-
-nav {
+.header_content {
     height: 60px;
     background: #fff;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
     margin-bottom: 4px;
     position:fixed;
     top: 0; 
     z-index: 1000;
     width:100%;
 }
+
 .navigation ul li{
     list-style:none;
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
     margin-right: 15px;
+    
 }  
 .navigation ul{
     float: right;
@@ -189,17 +100,24 @@ nav {
     -ms-transform: translate(-50%, -50%);
 }
 .main_row1{
-   width: 70%;
-   margin: 10px 0;
+   /* width: 70%; */
+   /* margin: 10px 0; */
    padding: 10px;
 }
-.main_row1 p{
+
+.main_row1 p.name,
+.main_row1 p.title {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 1;
     user-select: none;
+    padding: 10px;
 }
+.main_row1 p.title {
+    margin-bottom: 30px;
+}
+
 
 .main_row1 p.btn_prof{
     text-align: center;
@@ -215,7 +133,7 @@ a p.btn_prof {
 }
 .btn_prof:hover {
     color: rgb(0, 130, 63);
-    background: rgb(215, 255, 246);
+    background: #f5ffeff5;
     transition: 0.7s;
 }
 
@@ -227,38 +145,172 @@ a p.btn_prof {
     width:100%;
     height: 60px;
     background: #fff;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.3);
 }
 
 .footer_wrap p{
     text-align: center;
     font-weight: bold;
-    line-height: 60px;;
+    padding-top: 20px;
+    letter-spacing: -1px;
 } 
 
+@media (max-width: 767px) {
+/* 767px以下に適用されるCSS（スマホ用） */
 
 /* ========================================
-    制作実績ページ
+    SP ナビゲーション
 ========================================= */
 
+/* ハンバーガーメニュー */
+#nav_hamburger {
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100vh;
+    background: #f5ffeff5;
+    transition: .7s;
+}
 
+#nav_hamburger ul{
+    padding-top: 80px;
+}
 
-@media screen and  (min-width: 767px) {/* PC用CSS 767ｐｘ以上の場合適用 */
+#nav_hamburger ul li {
+    list-style:none;
+}
+
+#nav_hamburger a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    padding: 10px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+#nav_hamburger li a:hover {
+    color: #fff;
+    background:#7a7a7a;
+    border-bottom: none;
+}
+
+/* 位置と幅・高さ */
+#hamburger_line {
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 44px;
+    cursor: pointer;
+    transition: 1s;
+    left: auto;
+    right: 0;
+    margin-right: 20px;
+    }
+
+/* 線の縦幅・色の指定 */
+    .inner_line {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 45px;
+        height: 4px;
+        background-color: #555555;
+        transition: 1s;
+        border-radius: 4px;
+        }
+
+/* 横棒3本線 */
+        #line_1 {
+            top: 10px;
+        }
+        #line_2 {
+            top: 20px;
+        }
+        #line_3 {
+            bottom: 10px;
+        }
+
+/* 閉じるボタンの動き */
+.fadein{
+    transform: translateX(100%);
+    }
+    .line_1,.line_2,.line_3{
+        background: #555555;
+    }
+    .line_1 {
+        transform: translateY(10px) rotate(-45deg);
+        top: 0;
+    }
+    .line_2 {
+        opacity: 0;
+    }
+    .line_3 {
+        transform: translateY(-10px) rotate(45deg);
+        bottom: 0;
+    }
+
 
 #nav_hamburger,#hamburger_line {
-    display:none;
+    display: block;
 }
 .navigation {
-    display:block;
+    display: none;
+}
+/* ========================================
+    SP トップメイン画像
+========================================= */
+.main_row1 p.name,
+.main_row1 p.title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    user-select: none;
+    padding: 10px;
+}
+.main_row1 p.title {
+    margin-bottom: 0px;
+    padding-top: 0;
+}
+
+.main_row1 p.btn_prof{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: solid 2px #000;
+    padding: 5px;
+    margin-top: 10px;
+    width: 50%;
+ }
+
 }
 
 
-
 /* ========================================
-    footerコンテンツ
+    Profile
 ========================================= */
 
+
+
+
+
+
+
 /* ========================================
-    制作実績ページ
+    Works
 ========================================= */
 
+
+
+
+
+
+
+
+/* ========================================
+    Contact
+========================================= */

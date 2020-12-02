@@ -1,4 +1,4 @@
-"use stict";
+"use strict";
 
 function hamburger_line(){
     document.getElementById('line_1').classList.toggle('line_1')
