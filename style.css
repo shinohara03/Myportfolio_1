@@ -36,6 +36,8 @@ header {
     width: 100%;
     height: auto;
 }
+
+
 .navigation {
     display: block;
 }
@@ -82,15 +84,15 @@ header {
     トップメイン画像
 ========================================= */
 .main_img_wrap{
-    width: 100%;
-    height: auto;
     position: relative;
-}
-.main_img_wrap img{
     width: 100%;
-    height: auto;
-    margin-top: 64px;
+    min-height: 100vh;
+    background-image: url(../my_portfolio/images/top_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
+
 .main_row1{
     position:absolute;
     top: 80%;
@@ -100,8 +102,6 @@ header {
     -ms-transform: translate(-50%, -50%);
 }
 .main_row1{
-   /* width: 70%; */
-   /* margin: 10px 0; */
    padding: 10px;
 }
 
@@ -109,7 +109,8 @@ header {
 .main_row1 p.title {
     text-align: center;
     font-size: 40px;
-    font-weight: bold;
+    color: #FFF;
+	text-shadow: 0 0 0.2em rgba(0,0,0,1);
     line-height: 1;
     user-select: none;
     padding: 10px;
@@ -137,6 +138,10 @@ a p.btn_prof {
     transition: 0.7s;
 }
 
+
+
+
+
 /* ========================================
     footerコンテンツ
 ========================================= */
@@ -154,6 +159,8 @@ a p.btn_prof {
     padding-top: 20px;
     letter-spacing: -1px;
 } 
+
+
 
 @media (max-width: 767px) {
 /* 767px以下に適用されるCSS（スマホ用） */
@@ -260,9 +267,14 @@ a p.btn_prof {
 .navigation {
     display: none;
 }
+
+
+
+
 /* ========================================
     SP トップメイン画像
 ========================================= */
+
 .main_row1 p.name,
 .main_row1 p.title {
     text-align: center;
@@ -299,10 +311,6 @@ a p.btn_prof {
     margin: 50px auto;
 
 }
-.row2 {
-
-}
-
 
 
 /* ========================================
