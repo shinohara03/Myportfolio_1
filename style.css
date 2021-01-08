@@ -87,7 +87,7 @@ header {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../my_portfolio/images/top_header.jpg);
+    background-image: url(images/top_header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
