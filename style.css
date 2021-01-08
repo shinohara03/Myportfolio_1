@@ -139,9 +139,6 @@ a p.btn_prof {
 }
 
 
-
-
-
 /* ========================================
     footerコンテンツ
 ========================================= */
@@ -304,14 +301,78 @@ a p.btn_prof {
 /* ========================================
     Profile
 ========================================= */
-.Profile_wrap {
+h2.profile-title {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid olive;
+    margin-top:50px;
+    padding-bottom: 5px;
+}
+.profile_wrap {
     width: 960px;
-    height: 900px;
-    background: red;
+    height: 350px;
+    /* background: gray; */
     margin: 50px auto;
-
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.skill-wrap:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+.profile_row {
+    width: 45%;
+    /* background: rgb(255, 225, 225); */
+    padding: 1rem;
+}
+h3.profile-title {
+    font-size: 2rem; 
+}
+.profile-data {
+    list-style: none;
+}
+.profile-data li {
+    padding: 10px 0;
+    font-size: 1.5rem;
 }
 
+.profile-img {
+    width:45%;
+    background-image: url(images/img_1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.skill-img {
+    width:45%;
+    background-image: url(images/img_2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.hobby-img {
+    width:45%;
+    background-image: url(images/img_3.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+ul.skill-data {
+    margin-bottom: 10px;
+}
+.skill-data li {
+    padding: 5px 0;
+    font-size: 1rem;
+}
+.skill-data li:nth-child(even) {
+    padding: 0;
+}
+.hobby-data li {
+    padding: 5px 0;
+    font-size: 1.5rem;
+}
 
 /* ========================================
     Works
