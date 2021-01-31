@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profile</title>
+    <title>profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -45,20 +45,17 @@
     </div>
 </header>
     <!-- メイン画像 -->
-    <div class="main_img_wrap">
-        <div class="main_row1">
-            <p class="name">ERIKA SHINOHARA</p>
-            <p class="title">PORTFOLIO SITE</p>
-            <a href="#"><p class="btn_prof">TOUCH</p></a>
-        </div>
-    </div>
+  <div class="main_img_wrap" id="profile_img-box">
+      <div class="main_row1">
+        <h2 class="main-title">Profile</h2>
+      </div>
+  </div>
 <!-- ヘッダーコンテンツ　ここまで -->
-    
+
 <!-- Profile ここから-->
 <section>
-    <h2 class="profile-title">Profile</h2>
-    <div class="profile_wrap">
-        <div class="profile_row">
+    <div class="box">
+        <div class="text">
             <h3 class="profile-title">-About</h3>
             <ul class="profile-data">
                 <li>Women</li>
@@ -67,36 +64,36 @@
                 <li>Osaka/Saitama</li>
             </ul>
         </div>
-        <div class="profile-img"></div>
+        <div class="pict_A">
+            <img src="images/img_1.png">
+        </div>        
     </div>
-</section>
-<section>
-    <div class="profile_wrap skill-wrap">
-        <div class="profile_row">
+
+    <div class="box">
+        <div class="text">
             <h3 class="profile-title">-Skill</h3>
             <ul class="profile-data skill-data">
                 <li>HTML/CSS <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span></li>
                 <li>Photoshop <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span></li>
                 <li>Illustrator <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span></li>
             </ul>
-            <ul class="profile-data skill-data">
-                <h3>現在学習中</h3>
-                <li>JavaScript <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span></li>
-                <li>jQuery <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span></li>
-                <li>PHP <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span></li>
-                <li>WordPress <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span></li>
-                <li>Bootstrap <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span></li>
-                <li>イラスト制作 <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span></li>
-            </ul>
+            <br>
+                <ul class="profile-data skill-data">
+                    <h3>現在学習中</h3>
+                    <li class="study_list">JavaScript、jQuery 、PHP、<br>
+                        WordPress、Bootstrap、XD</li>
+                </ul>
+                
         </div>
-        <div class="skill-img"></div>
+        <div class="pict_B">
+            <img src="images/img_2.png">
+        </div>        
     </div>
-</section>
-<section>
-    <div class="profile_wrap">
-        <div class="profile_row">
+
+    <div class="box">
+        <div class="text">
             <h3 class="profile-title">-Hobby</h3>
-            <ul class="profile-data skill-data hobby-data">
+            <ul class="profile-data">
                 <li>Design</li>
                 <li>Movie</li>
                 <li>Music</li>
@@ -104,17 +101,20 @@
                 <li>Travel</li>
             </ul>
         </div>
-        <div class="hobby-img"></div>
+        <div class="pict_C">
+            <img src="images/img_3.png">
+        </div>        
     </div>
 </section>
 
 <!-- Profile ここかまで-->
 
+       
 <!-- フッター　ここから -->
     <footer class="footer_wrap">
         <p><small>Copyright (c) 2020 Erika Shinohara All Rights Reserved.</small></p>
     </footer>
 <!-- フッター　ここまで -->
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
