@@ -8,8 +8,6 @@ body {
     font-size: 14px;
     color: #333333;
 }
-
-
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +26,8 @@ a {
 }
 ul li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* ========================================
@@ -39,8 +39,6 @@ header {
     width: 100%;
     height: auto;
 }
-
-
 .navigation {
     display: block;
 }
@@ -304,21 +302,35 @@ a p.btn_prof {
  }
 
 }
-
+/* 共通 */
+h2.main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
 /* ========================================
     Profile
 ========================================= */
-#profile_img-box {
+#content{
     width: 100%;
-    min-height: 29vh;
+    max-width: 960px;
+    height: auto;
+    margin: 120px auto 120px;
+    background-color:#f2ede7;  
+    color: #666;
+    padding-bottom: 80px;
+}
+.head-image {
+    width: 100%;
+    min-height: 40vh;
     background-image: url(images/header_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     margin-top: 60px;
 }
-
-#profile_img-box .main_row1{
+.main-title{
     position:absolute;
     top: 50%;
     left: 50%;
@@ -327,110 +339,125 @@ a p.btn_prof {
     -ms-transform: translate(-50%, -50%);
 }
 
-h2.main-title {
-    font-size: 2rem;
-    font-weight: bold;
-    border-bottom: 5px solid olive;
-    padding-bottom: 7px;
-}
-.box {
-    width: 960px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* background: gray; */
-}
 
-.box:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-
-h3.profile-title {
-    font-size: 2rem; 
+/* プロフィール詳細  スキル詳細共通*/
+.profile-area {
+    text-align: center;
 }
-
-.profile-data li {
-    padding: 10px 0;
-    font-size: 1.5rem;
-    line-height: 0.5;
+h3.section-title {
+    font-size: 32px;
+    padding-top: 40px;
 }
-.skill-data span {
-    margin-left: 5px;
-    font-size: 1rem;
+hr.border{
+    width: 15%;
+    border-top: 3px solid #000;
+    margin-top: 8px;
 }
-.skill-data .study_list {
-    line-height: 1;
+figure.section-img img{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px;
 }
-
-.pict_C  {
-    margin-left: 140px;
-
+.profile-details {
+    margin-top: 40px;
 }
-.pict_A img,
-.pict_B img,
-.pict_C img{
-    width: 400px;
-    max-width: 100%;
-    height:auto;
+.deta-row {
+    text-align: center;
+    width: 70%;
+    padding: 1.2em 0.5em;
+    margin: 2em auto;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ab9676;
+    border-radius: 8px;
+}
+.sub-title {
+    font-size: 20px;
+}
+.row-text_1 {
+    margin-top: 8px;
+    font-size: 18px;
+}
+.row-text_2{
+    margin-top: 8px;
+    font-size: 16px;
+}
+ul.d-i li{
+    display: inline-block;
+}
+/* スキル */
+.skill-area {
+    margin-top: 80px;
+    text-align: center;
+}
+.skill-details {
+    margin-top: 40px;
+}
+.skill-text_box {
+    width: 70%;
+    margin: 1em auto 0;
+    background: #c79999;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+}
+.study-list {
+    margin-top: 32px;
+}
+.study-list .row-text_1 {
+    padding: 0 96px;
 }
 
 @media (max-width: 767px) {
-#profile_img-box {
+#content{
+    max-width: 90%;
+    height: auto;
+    margin: 64px auto 64px;
+    padding-bottom: 60px;
+}
+.head-image {
     width: 100%;
-    min-height: 24ßvh;
-    background-image: url(images/header_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-position: left; 
-    margin-top: 60px; 
+    min-height: 14vh;
+    margin: 60px auto 0px;
+    background-size: contain;
 }
-.box {
+h3.section-title {
+    font-size: 18pt;
+}
+figure.section-img img {
     width: 100%;
-    /* flex-direction: column; */
-    display: block;
-    }
-.box:nth-child(even) {
-    /* flex-direction: column; */
-    display: block;
+    max-width: 90%;
 }
-.pict_A,
-.pict_B,
-.pict_C {
-    width:100%;
+.deta-row {
+    width: 87%;
 }
-.text {
-    padding-left:10px;
-    padding-bottom:10px;
+.sub-title {
+    font-size: 16px;
 }
-.box:nth-child(3n)  {
-    margin-bottom: 0;
+.row-text_1 {
+    font-size: 14px;
+}
+.row-text_2 {
+    font-size: 14px;
+}
+.skill-area {
+    margin-top: 24px;
+}
+.skill-text_box {
+    width: 90%;
+}
+.study-list .row-text_1 {
+    padding: 0 10px;
+}
 
-}
-.pict_C  {
-    margin-left: 0px;
-
-}  
 } 
 
 
 /* ========================================
     Works
 ========================================= */
-#works_img-box {
-    width: 100%;
-    min-height: 29vh;
-    background-image: url(images/header_2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-position: left;  
-    margin-top: 60px;
-    /* background:rgb(194, 194, 194); */
+.work-area {
 
 }
 
@@ -443,12 +470,7 @@ h3.profile-title {
     -ms-transform: translate(-50%, -50%);
 }
 
-h2.main-title {
-    font-size: 2rem;
-    font-weight: bold;
-    border-bottom: 5px solid olive;
-    padding-bottom: 7px;
-}
+
 
 .work-content {
     width: 960px;
@@ -541,13 +563,6 @@ h2.main-title {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-h2.main-title {
-    font-size: 2rem;
-    font-weight: bold;
-    border-bottom: 5px solid olive;
-    padding-bottom: 7px;
 }
 
 
