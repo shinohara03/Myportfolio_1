@@ -266,9 +266,6 @@ a p.btn_prof {
     display: none;
 }
 
-
-
-
 /* ========================================
     SP トップメイン画像
 ========================================= */
@@ -380,6 +377,15 @@ figure.section-img img{
 ul.d-i li{
     display: inline-block;
 }
+.row-text_3 {
+    text-align: left;
+    width: 95%;
+    margin: 2em auto;
+    color: #565656;
+    font-size: 13pt;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
 /* スキル */
 .skill-area {
     margin-top: 80px;
@@ -444,7 +450,6 @@ figure.section-img img {
 .study-list .row-text_1 {
     padding: 0 10px;
 }
-
 } 
 
 /* ========================================
@@ -586,7 +591,6 @@ p.more-btn {
     font-size: 10pt;
     font-weight: bold;
 }
-
 .img-block img{
     width: 300px;
 }
@@ -594,65 +598,56 @@ p.more-btn {
     width: 150px;
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 767px) {
-    .head-image.work {
-        width: 100%;
-        min-height: 14vh;
-        margin: 60px auto 0px;
-        background-size: contain;
-    }
-    #works_img-box {
-        width: 100%;
-        min-height: 24vh;
-        background-image: url(images/header_2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        background-position: left;  
-        margin-top: 60px;
-    }
-    .work-content {
-        width: 100%;
-    }
-    .work-details-wrap {
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 40px;
-        padding: 32px;
-        background: #fff;
-        border: solid 2px #666;
-    }
-    .deta-block {
-        margin-left: 0;
-        margin-top: 16px;
-    }
-    .deta-block p {
-        font-size:11pt;
-    }
-    .img-block img{
-        width: 100%;
-    }
-    .d-flex-img img {
-        width: 100%;
-    }
-    
-    .list-btn {
-        margin-top:16px;
-    }
-    .work_nav_btn {
-        display: flex;
-        flex-direction: column;
-    }
-    .list-btn_content a {
-        width: 90%;
+.head-image.work {
+    width: 100%;
+    min-height: 14vh;
+    margin: 60px auto 0px;
+    background-size: contain;
+}
+#works_img-box {
+    width: 100%;
+    min-height: 24vh;
+    background-image: url(images/header_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: left;  
+    margin-top: 60px;
+}
+.work-content {
+    width: 100%;
+}
+.work-details-wrap {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 32px;
+    background: #fff;
+    border: solid 2px #666;
+}
+.deta-block {
+    margin-left: 0;
+    margin-top: 16px;
+}
+.deta-block p {
+    font-size:11pt;
+}
+.img-block img{
+    width: 100%;
+}
+.d-flex-img img {
+    width: 100%;
+}
+.list-btn {
+    margin-top:16px;
+}
+.work_nav_btn {
+    display: flex;
+    flex-direction: column;
+}
+.list-btn_content a {
+    width: 90%;
 } 
 .p.more-btn {
     width: 90%;
@@ -666,46 +661,66 @@ p.more-btn {
     width: 90%;
     margin-top: 32px;
 }
+}
 
 
 /* ========================================
     Contact
 ========================================= */
 
-#content_img-box {
+.head-image.contact {
     width: 100%;
-    min-height: 29vh;
+    min-height: 40vh;
     background-image: url(images/header_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
-    background-position: left;  
     margin-top: 60px;
 }
-
-#content_img-box .main_row1{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.contact-area {
+    text-align: center;
+}
+.section-text-sub {
+    text-align: center;
+    width: 70%;
+    margin: 2em auto;
+    color: #565656;
+    font-size: 18pt;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.contant_address {
+    text-align: center;
+    width: 50%;
+    padding: 1.2em 0.5em;
+    margin: 2em auto;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ab9676;
+    border-radius: 8px;
+    font-size: 18pt;
+    font-weight: bold;
 }
 
-
-
-
 @media (max-width: 767px) {
-    #works_img-box {
-        width: 100%;
-        min-height: 24vh;
-        background-image: url(images/header_2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        background-position: left;  
-        margin-top: 60px;
-    }
+.head-image.contact {
+    width: 100%;
+    min-height: 14vh;
+    margin: 60px auto 0px;
+    background-size: contain;
+}
+.section-text-sub {
+    width: 90%;
+    margin: 2em auto;
+    font-size: 11pt;
+}
+.contant_address {
+    width: 90%;
+    padding: 1.2em 0.5em;
+    margin: 2em auto;
+    font-size: 10pt;
+}
 } 
 
-} 
