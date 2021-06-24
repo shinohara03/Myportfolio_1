@@ -120,8 +120,6 @@ header {
 .main_row1 p.title {
     margin-bottom: 30px;
 }
-
-
 .main_row1 p.btn_prof{
     text-align: center;
     font-size: 16px;
@@ -134,13 +132,11 @@ header {
  }
 a p.btn_prof {
     color: #000;
-
 }
 .btn_prof:hover {
     color: rgb(0, 130, 63);
     background: #f5ffeff5;
     transition-duration: 2s;
-    
 }
 
 
@@ -320,7 +316,7 @@ h2.main-title {
     color: #666;
     padding-bottom: 80px;
 }
-.head-image {
+.head-image.prof {
     width: 100%;
     min-height: 40vh;
     background-image: url(images/header_1.jpg);
@@ -338,8 +334,6 @@ h2.main-title {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-
-
 /* プロフィール詳細  スキル詳細共通*/
 .profile-area {
     text-align: center;
@@ -416,7 +410,7 @@ ul.d-i li{
     margin: 64px auto 64px;
     padding-bottom: 60px;
 }
-.head-image {
+.head-image.prof {
     width: 100%;
     min-height: 14vh;
     margin: 60px auto 0px;
@@ -453,66 +447,145 @@ figure.section-img img {
 
 } 
 
-
 /* ========================================
     Works
 ========================================= */
 .work-area {
-
-}
-
-#works_img-box .main_row1{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-
-
-.work-content {
-    width: 960px;
-}
-
-.work-content h4 {
-    font-size: 1.5rem; 
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-.row-1 {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-.row-1 a {
-    color:#333;
-}
-
-.work-content .row-1 p {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #f4f2f0;
-    display: inline-block;
-    line-height:11;
-    margin: 5px;
-}
-.work-content .row-1 p:hover {
-    background: #eec9a3;
-    transition-duration: 2s;
-}
-.work-content div h4 {
     text-align: center;
 }
-
-.grid_1 {
-    display: grid;
-    
+.head-image.work {
+    width: 100%;
+    min-height: 40vh;
+    background-image: url(images/header_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 60px;
+}
+/* 上部*/
+.section-title-sub {
+    margin-top: 40px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18pt;
+}
+/* ボタン */
+.list-btn_content {
+    margin-top: 40px;
+}
+.work_nav_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list-btn {
+    width: 100%;
+    border: 2px solid #666;
+    border-radius: 30px;
+    padding:16px;
+    font-size:10pt;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    background:#fff;
+    line-height: 2;
+    transition: .7s;
+    color:#666;
+    font-weight: bold;
+}
+.list-btn:hover {
+    background-color: #f5ffeff5;
+    border-color: rgb(0, 130, 63);
+    color: rgb(0, 130, 63);
+    font-weight: bold;
+}
+.list-btn_content a {
+    width: 20%;
+    text-align: center;
+    height: 100%;
+    color: #000;
+    display:flex;
 }
 
-
+/* デザインコンテンツ */
+.work-details-wrap {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 32px;
+    background: #fff;
+    border: solid 2px #666;
+}
+.img-block {
+    float: left;
+}
+.deta-block {
+    float: left;
+    margin-left: 32px;
+}
+.deta-block .d-flex-img {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.deta-block {
+    margin-left: 32px;
+}
+.deta-block p {
+    text-align: left;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    line-height: 1;
+    line-height: 1.5;
+}
+.m-t {
+    margin-top: 64px;
+}
+p.m-t {
+    margin-top:16px;
+}
+p.more-btn {
+    text-align: center;
+    width: 50%;
+    margin-top: 32px;
+}
+.more-btn {
+    border: 2px solid #666;
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 10pt;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    background:#fff;
+    line-height: 2;
+    transition: .7s;
+    color:#666;
+    font-weight: bold;
+}
+.more-btn:hover {
+    background-color: #f5ffeff5;
+    border-color: rgb(0, 130, 63);
+    color: rgb(0, 130, 63);
+    font-weight: bold;
+}
+.deta-block a {
+    text-align: center;
+    height: 100%;
+    color: #000;
+}
+.text-block {
+    width: 60%;
+}
+.work-detail:nth-child(2) {
+    margin-top: 56px;
+}
+.deta-block.text-block p.site-name-mt{
+    margin-top:0;
+}
+.deta-block a p.more-btn {
+    font-size: 10pt;
+    font-weight: bold;
+}
 
 
 
@@ -525,6 +598,12 @@ figure.section-img img {
 
 
 @media (max-width: 767px) {
+    .head-image.prof {
+        width: 100%;
+        min-height: 14vh;
+        margin: 60px auto 0px;
+        background-size: contain;
+    }
     #works_img-box {
         width: 100%;
         min-height: 24vh;
