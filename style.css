@@ -619,7 +619,7 @@ p.more-btn {
     width: 100%;
 }
 .work-details-wrap {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 40px;
     padding: 32px;
@@ -640,7 +640,10 @@ p.more-btn {
     width: 100%;
 }
 .list-btn {
+    width: 95%;
+    margin: 0 auto;
     margin-top:16px;
+    padding: 8px;
 }
 .work_nav_btn {
     display: flex;
@@ -649,16 +652,13 @@ p.more-btn {
 .list-btn_content a {
     width: 90%;
 } 
-.p.more-btn {
-    width: 90%;
-}
-/*<!-- ブロック3 -->*/
 .text-block {
     width: 100%;
 }
 p.more-btn {
     text-align: center;
     width: 90%;
+    padding: 8px;
     margin-top: 32px;
 }
 }
