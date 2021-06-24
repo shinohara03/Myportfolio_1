@@ -587,7 +587,12 @@ p.more-btn {
     font-weight: bold;
 }
 
-
+.img-block img{
+    width: 300px;
+}
+.d-flex-img img {
+    width: 150px;
+}
 
 
 
@@ -598,7 +603,7 @@ p.more-btn {
 
 
 @media (max-width: 767px) {
-    .head-image.prof {
+    .head-image.work {
         width: 100%;
         min-height: 14vh;
         margin: 60px auto 0px;
@@ -617,7 +622,50 @@ p.more-btn {
     .work-content {
         width: 100%;
     }
+    .work-details-wrap {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 32px;
+        background: #fff;
+        border: solid 2px #666;
+    }
+    .deta-block {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .deta-block p {
+        font-size:11pt;
+    }
+    .img-block img{
+        width: 100%;
+    }
+    .d-flex-img img {
+        width: 100%;
+    }
+    
+    .list-btn {
+        margin-top:16px;
+    }
+    .work_nav_btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .list-btn_content a {
+        width: 90%;
 } 
+.p.more-btn {
+    width: 90%;
+}
+/*<!-- ブロック3 -->*/
+.text-block {
+    width: 100%;
+}
+p.more-btn {
+    text-align: center;
+    width: 90%;
+    margin-top: 32px;
+}
 
 
 /* ========================================
